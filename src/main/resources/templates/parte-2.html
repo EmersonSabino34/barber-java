@@ -25,7 +25,6 @@
     <header>
         <h1>Olá, Rodolfo!</h1>
         <p>Qui, 24 Abril</p>
-
         <div>
             <input type="text" placeholder="Buscar">
             <button>
@@ -39,12 +38,10 @@
             <img th:src="@{barber/cut.png}" alt="Descrição da imagem" />
             <h3>Cabelo</h3>
         </div>
-
         <div class="row-item">
             <img th:src="@{barber/mustache.png}" alt="Descrição da imagem" />
             <h3>Barba</h3>
         </div>
-
         <div class="row-item">
             <img th:src="@{barber/razor.png}" alt="Descrição da imagem" />
             <h3>Acabamento</h3>
@@ -66,26 +63,6 @@
             --background-secondary: #1d1d1d;
             --background-text: #fff;
             --background-purple: #871dea;
-        }
-        .row{
-            gap: 10px;
-            display: flex;
-        }
-        .row, .img-banner{
-            padding: 10px 20px;
-            width: 100%;
-        }
-
-        .row-item{
-            gap: 10;
-
-            padding: 10px;
-            width: 150px;
-            display: flex;
-            gap: 7px;
-            border-radius: 7px;
-            justify-content: center;
-            background-color: var(--background-secondary);
         }
         *{
             margin: 0;
@@ -123,6 +100,25 @@
         }
         .logo-text2{
             color: var(--background-text);
+        }
+        .row{
+            gap: 10px;
+            display: flex;
+        }
+        .row, .img-banner{
+            padding: 10px 20px;
+            width: 100%;
+        }
+        .row-item{
+            gap: 10;
+
+            padding: 10px;
+            width: 150px;
+            display: flex;
+            gap: 7px;
+            border-radius: 7px;
+            justify-content: center;
+            background-color: var(--background-secondary);
         }
         button{
             padding: 7px;
@@ -163,7 +159,6 @@
             from {background-color: green;}
             to {background-color: #1d1d1d;}
         }
-
         header div button{
             border-radius: 5px;
             background-color: var(--background-purple);
@@ -174,7 +169,6 @@
                 animation-iteration-count: infinite;
             */
         }
-
     </style>
 </body>
 </html>
