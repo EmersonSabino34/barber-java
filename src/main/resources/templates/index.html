@@ -25,7 +25,6 @@
     <header>
         <h1>Olá, Rodolfo!</h1>
         <p>Qui, 24 Abril</p>
-
         <div>
             <input type="text" placeholder="Buscar">
             <button>
@@ -39,53 +38,105 @@
             <img th:src="@{barber/cut.png}" alt="Descrição da imagem" />
             <h3>Cabelo</h3>
         </div>
-
         <div class="row-item">
             <img th:src="@{barber/mustache.png}" alt="Descrição da imagem" />
             <h3>Barba</h3>
         </div>
-
         <div class="row-item">
             <img th:src="@{barber/razor.png}" alt="Descrição da imagem" />
             <h3>Acabamento</h3>
         </div>
     </div>
-    
 
-    <!-- exemplo com java  -->
-    <img class="img-banner" th:src="@{barber/Banner.png}" alt="Descrição da imagem" />
+     <!-- exemplo com java  -->
+     <img class="img-banner" th:src="@{barber/Banner.png}" alt="Descrição da imagem" />
     
-    <!-- exemplo com html
-    <img class="img-banner" src="barber/banner1.png" alt="Descrição da imagem" />
-    -->
+     <!-- exemplo com html
+     <img class="img-banner" src="barber/banner1.png" alt="Descrição da imagem" />
+     -->
+
+    <h2 class="titulo">Agendamento</h2>
+
+    <div class="card-scheduling">
+        <div class="description">
+            <button>Confirmado</button>
+            <h2>Corte de Cabelo</h2>
+            <div class="description-row">
+                <img th:src="@{barber/icone-description.png}" alt="">
+                <p>Vintage Barber</p>
+            </div>
+        </div>
+        <div class="scheduling">
+            <p>Abril</p>
+            <h2>26</h2>
+            <p>10:45</p>
+        </div>
+    </div>
     
     <style>
+
+        .titulo{
+            font-size: 16px;
+            padding-top: 10px;
+            padding-left: 20px;
+            text-transform: uppercase;
+        }
+        .card-scheduling{
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            border-radius: 12px;
+
+            background-color: var(--background-secondary);
+        }
+        .description{
+            flex: 1;
+
+            gap: 7px;
+            display: flex;
+            flex-direction: column;
+
+            border-right: #fff 1px solid;
+            
+        }
+        .description button{
+            color: var(--background-purple);
+            padding: 5px 10px;
+            border-radius: 7px;
+            width: 100px;
+        }
+        .description-row{
+            gap: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .description-row img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .scheduling{
+            width: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            padding-left: 10px;
+
+        }
+        .scheduling h2{
+            font-size: 44px;
+        }
 
         :root { /* criando variaveis roots */
             --background-primary: #000;
             --background-secondary: #1d1d1d;
             --background-text: #fff;
             --background-purple: #871dea;
-        }
-        .row{
-            gap: 10px;
-            display: flex;
-        }
-        .row, .img-banner{
-            padding: 10px 20px;
-            width: 100%;
-        }
-
-        .row-item{
-            gap: 10;
-
-            padding: 10px;
-            width: 150px;
-            display: flex;
-            gap: 7px;
-            border-radius: 7px;
-            justify-content: center;
-            background-color: var(--background-secondary);
         }
         *{
             margin: 0;
@@ -123,6 +174,25 @@
         }
         .logo-text2{
             color: var(--background-text);
+        }
+        .row{
+            gap: 10px;
+            display: flex;
+        }
+        .row, .img-banner{
+            padding: 10px 20px;
+            width: 100%;
+        }
+        .row-item{
+            gap: 10;
+
+            padding: 10px;
+            width: 150px;
+            display: flex;
+            gap: 7px;
+            border-radius: 7px;
+            justify-content: center;
+            background-color: var(--background-secondary);
         }
         button{
             padding: 7px;
@@ -163,7 +233,6 @@
             from {background-color: green;}
             to {background-color: #1d1d1d;}
         }
-
         header div button{
             border-radius: 5px;
             background-color: var(--background-purple);
@@ -174,7 +243,6 @@
                 animation-iteration-count: infinite;
             */
         }
-
     </style>
 </body>
 </html>
