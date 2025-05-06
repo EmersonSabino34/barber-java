@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="card-container">
+        <div class="card-item">
+            <div class="card-image">
+                <img th:src="@{barber/card/01.png}"  alt="">
+                <div>
+                    <i class="bi bi-star-fill"></i>
+                    <span>5,0</span>
+                </div>
+            </div>
+            <div class="description-card">
+                <h3>Vitage Barber</h3>
+                    <h5>Avenida Paulista, Guarulhos, 670, São Paulo</h5>
+                <button>Reservar</button>
+            </div>
+        </div>
+         <div class="card-item">
+            <div class="card-image">
+                <img th:src="@{barber/card/01.png}"  alt="">
+                <div>
+                    <i class="bi bi-star-fill"></i>
+                    <span>5,0</span>
+                </div>
+            </div>
+            <div class="description-card">
+                <h3>Vitage Barber</h3>
+                    <h5>Avenida Paulista, Guarulhos, 670, São Paulo</h5>
+                <button>Reservar</button>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="card-image">
+                <img th:src="@{barber/card/01.png}"  alt="">
+                <div>
+                    <i class="bi bi-star-fill"></i>
+                    <span>5,0</span>
+                </div>
+            </div>
+            <div class="description-card">
+                <h3>Vitage Barber</h3>
+                    <h5>Avenida Paulista, Guarulhos, 670, São Paulo</h5>
+                <button>Reservar</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .card-container{
+            padding: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            gap: 10px;
+            display: flex;
+            flex-wrap: nowrap; /* <-- Importante */
+            color: #fff;
+            background-color: black;
+            overflow-x: auto;
+        }
+        .card-item{
+            width: 285px;
+            height: 285px;
+            border-radius: 10px;
+            border: 2px solid #fff;
+            background-color: #1d1d1d;
+        }
+    </style>
+</body>
+</html>

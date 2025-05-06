@@ -8,84 +8,156 @@
 </head>
 <body>
 
-    <nav>
-        <div class="logo">
-            <div class="logo-text">
-                <i class="bi bi-scissors"></i>
-                <h3>SHOP</h3>
-                <h3 class="logo-text2">BARBER</h3>
-            </div>
-        </div>
-            
-        <button>
-            <i class="bi bi-list"></i>
-        </button>
-    </nav>
-
-    <header>
-        <h1>Olá, Rodolfo!</h1>
-        <p>Qui, 24 Abril</p>
-        <div>
-            <input type="text" placeholder="Buscar">
-            <button>
-                <i class="bi bi-search"></i>
-            </button>
-        </div>
-    </header>
-
-    <div class="row">
-        <div class="row-item">
-            <img th:src="@{barber/cut.png}" alt="Descrição da imagem" />
-            <h3>Cabelo</h3>
-        </div>
-        <div class="row-item">
-            <img th:src="@{barber/mustache.png}" alt="Descrição da imagem" />
-            <h3>Barba</h3>
-        </div>
-        <div class="row-item">
-            <img th:src="@{barber/razor.png}" alt="Descrição da imagem" />
-            <h3>Acabamento</h3>
-        </div>
-    </div>
-
-    <img class="img-banner" th:src="@{barber/Banner.png}" alt="Descrição da imagem" />
-
-    <h2 class="titulo">Agendamento</h2>
-
-    <div class="card-scheduling">
-        <div class="description">
-            <button>Confirmado</button>
-            <h2>Corte de Cabelo</h2>
-            <div class="description-row">
-                <img th:src="@{barber/card/01.png}" alt="">
-                <p>Vintage Barber</p>
-            </div>
-        </div>
-        <div class="scheduling">
-            <p>Abril</p>
-            <h2>26</h2>
-            <p>10:45</p>
-        </div>
-    </div>
-
-    <h2 class="titulo">Recomendados
-        
-    </h2>
-
-    <div class="card-container">
-        <div class="card-item">
-            <div class="card-image">
-                <img th:src="@{barber/card/01.png}"  alt="">
-                <div>
-                    <i class="bi bi-star-fill"></i>
-                    <span>5,0</span>
+    <div class="container-body">
+        <nav>
+            <div class="logo">
+                <div class="logo-text">
+                    <i class="bi bi-scissors"></i>
+                    <h3>SHOP</h3>
+                    <h3 class="logo-text2">BARBER</h3>
                 </div>
             </div>
+                
+            <button>
+                <i class="bi bi-list"></i>
+            </button>
+        </nav>
+    
+        <header>
+            <h1>Olá, Rodolfo!</h1>
+            <p>Qui, 24 Abril</p>
+            <div>
+                <input type="text" placeholder="Buscar">
+                <button>
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </header>
+    
+        <div class="row">
+            <div class="row-item">
+                <img th:src="@{barber/cut.png}" alt="Descrição da imagem" />
+                <h3>Cabelo</h3>
+            </div>
+            <div class="row-item">
+                <img th:src="@{barber/mustache.png}" alt="Descrição da imagem" />
+                <h3>Barba</h3>
+            </div>
+            <div class="row-item">
+                <img th:src="@{barber/razor.png}" alt="Descrição da imagem" />
+                <h3>Acabamento</h3>
+            </div>
+        </div>
+    
+        <img class="img-banner" th:src="@{barber/Banner.png}" alt="Descrição da imagem" />
+    
+        <h2 class="titulo">Agendamento</h2>
+    
+        <div class="card-scheduling">
             <div class="description">
-                <h3>Vitage Barber</h3>
-                <h5>Avenida Paulista, Guarulhos</h5>
-                <h5>670, São Paulo</h5>
-                <button>Reservar</button>
+                <button>Confirmado</button>
+                <h2>Corte de Cabelo</h2>
+                <div class="description-row">
+                    <img th:src="@{barber/card/01.png}" alt="">
+                    <p>Vintage Barber</p>
+                </div>
+            </div>
+            <div class="scheduling">
+                <p>Abril</p>
+                <h2>26</h2>
+                <p>10:45</p>
+            </div>
+        </div>
+    
+        <h2 class="titulo">Recomendados</h2>
+        <div class="card-container">
+            <div class="card-item">
+                <div class="card-image">
+                    <img th:src="@{barber/card/01.png}"  alt="">
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <span>5,0</span>
+                    </div>
+                </div>
+                <div class="description-card">
+                    <h3>Vitage Barber</h3>
+                        <h5>Avenida Paulista, Guarulhos, 670, São Paulo</h5>
+                    <button>Reservar</button>
+                </div>
+            </div>
+             <div class="card-item">
+                <div class="card-image">
+                    <img th:src="@{barber/card/01.png}"  alt="">
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <span>5,0</span>
+                    </div>
+                </div>
+                <div class="description-card">
+                    <h3>Vitage Barber</h3>
+                        <h5>Avenida Paulista, Guarulhos, 670, São Paulo</h5>
+                    <button>Reservar</button>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="card-image">
+                    <img th:src="@{barber/card/01.png}"  alt="">
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <span>5,0</span>
+                    </div>
+                </div>
+                <div class="description-card">
+                    <h3>Vitage Barber</h3>
+                        <h5>Avenida Paulista, Guarulhos, 670, São Paulo</h5>
+                    <button>Reservar</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="titulo">Populares</h2>
+        <div class="card-container">
+            <div class="card-item">
+                <div class="card-image">
+                    <img th:src="@{barber/card/01.png}"  alt="">
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <span>5,0</span>
+                    </div>
+                </div>
+                <div class="description-card">
+                    <h3>Vitage Barber</h3>
+                        <h5>Avenida Paulista, Guarulhos, 670, São Paulo</h5>
+                    <button>Reservar</button>
+                </div>
+            </div>
+             <div class="card-item">
+                <div class="card-image">
+                    <img th:src="@{barber/card/01.png}"  alt="">
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <span>5,0</span>
+                    </div>
+                </div>
+                <div class="description-card">
+                    <h3>Vitage Barber</h3>
+                        <h5>Avenida Paulista, Guarulhos, 670, São Paulo</h5>
+                    <button>Reservar</button>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="card-image">
+                    <img th:src="@{barber/card/01.png}"  alt="">
+                    <div>
+                        <i class="bi bi-star-fill"></i>
+                        <span>5,0</span>
+                    </div>
+                </div>
+                <div class="description-card">
+                    <h3>Vitage Barber</h3>
+                        <h5>Avenida Paulista, Guarulhos, 670, São Paulo</h5>
+                    <button>Reservar</button>
+                </div>
             </div>
         </div>
     </div>
@@ -159,6 +231,11 @@
             padding: 0;
             border: none;
             box-sizing: border-box;
+        }
+        .container-body{
+            width: 100vw;
+            margin: 0 auto;
+            overflow: hidden;
         }
         body{
             color: var(--background-text);
@@ -244,16 +321,6 @@
             letter-spacing: 3px;
             background-color: var(--background-secondary);
         }
-        .card-container{
-            height: 50vh;
-            padding: 20px;
-        }
-        .card-item{
-            width: 45%;
-            height: 270px;
-            border-radius: 10px;
-            background-color: var(--background-secondary);
-        }
         .card-image{
             padding: 5px;
             position: relative;
@@ -278,14 +345,19 @@
         .bi-star-fill{
             color: var(--background-purple);
         }
-        .description {
+        .description-card {
             padding: 5px 10px;
+
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
         }
         .card-item button{
             width: 100%;
-            color: var(--background-text);
+            margin-top: 5px;
+            color: var(--background-purple);
             background-color: transparent;
-            border: 1px solid white;
+            border: 1px solid var(--background-purple);
         }
         /** Animação */
         @keyframes example {
@@ -301,6 +373,27 @@
                 animation-duration: 4s;
                 animation-iteration-count: infinite;
             */
+        }
+
+        .card-container{
+            width: 100%;
+            height: 40vh;
+            padding: 20px;
+            gap: 10px;
+            display: flex;
+            overflow-x: scroll;
+            flex-wrap: nowrap; /* <-- Importante */
+            justify-content: space-between;
+
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* IE 10+ */
+        }
+        .card-item{
+            width: 185px;
+            height: 285px;
+            border-radius: 10px;
+            flex: 0 0 auto; /* <-- Impede o redimensionamento automático */
+            background-color: var(--background-secondary);
         }
     </style>
 </body>
