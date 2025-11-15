@@ -1,4 +1,7 @@
-### Projeto Barber Java
+### Projeto Barber 
+* Java JDK 21 API.
+* Java TimeLify Frontend.
+* TailwindCSS
 
 <img src="./screens/home-1-mobile.png" alt="" />
 <img src="./screens/home-2-mobile.png" alt="" />
